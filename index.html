@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkateswara Rao Tatakuntla | Art Director</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --black: #050505; }
+        body { background-color: var(--black); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; scroll-behavior: smooth; }
+        
+        header { 
+            height: 100vh; display: flex; flex-direction: column; justify-content: center; 
+            align-items: center; text-align: center; border-bottom: 3px solid var(--gold);
+        }
+        
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; border: 3px solid var(--gold); margin-bottom: 20px; object-fit: cover; }
+        h1 { color: var(--gold); font-size: 2.5rem; text-transform: uppercase; letter-spacing: 3px; margin: 0; }
+        .tagline { color: #888; margin-top: 10px; letter-spacing: 2px; }
+
+        /* Professional Tabs */
+        .nav-tabs { margin-top: 35px; display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+        .tab-btn { 
+            padding: 10px 25px; border: 1px solid var(--gold); color: var(--gold); 
+            text-decoration: none; font-weight: bold; transition: 0.4s; 
+        }
+        .tab-btn:hover { background: var(--gold); color: black; box-shadow: 0 0 15px var(--gold); }
+
+        .section { padding: 80px 10%; border-bottom: 1px solid #222; }
+        .section-title { color: var(--gold); font-size: 2rem; text-align: center; text-transform: uppercase; margin-bottom: 40px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: #111; border: 1px solid #222; border-radius: 8px; overflow: hidden; transition: 0.3s; }
+        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .card img, .card video { width: 100%; height: 250px; object-fit: cover; }
+        .card-info { padding: 15px; text-align: center; color: var(--gold); font-weight: bold; }
+
+        .social-links { position: fixed; right: 20px; bottom: 30px; display: flex; flex-direction: column; gap: 15px; }
+        .social-links a { width: 45px; height: 45px; border: 1px solid var(--gold); color: var(--gold); border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; transition: 0.3s; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="assets/profile.jpg" alt="Venkateswara Rao Tatakuntla" class="profile-img">
+        <h1>Venkateswara Rao Tatakuntla</h1>
+        <div class="tagline">Production Designer | Art Director</div>
+        <div class="nav-tabs">
+            <a href="#about" class="tab-btn">About Me</a>
+            <a href="#gallery" class="tab-btn">Gallery</a>
+            <a href="#sketches" class="tab-btn">Sketches</a>
+            <a href="#miniatures" class="tab-btn">Miniatures</a>
+            <a href="#videos" class="tab-btn">Videos</a>
+        </div>
+    </header>
+
+    <div class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p style="text-align: center; line-height: 1.8; color: #ccc;">
+            My journey in the film industry began in 1998. Since then, I have worked on numerous prestigious films as an Associate Art Director and Production Designer. I specialize in set designing and creating realistic sets.
+        </p>
+    </div>
+
+    <div class="section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="grid">
+            <div class="card"><img src="assets/salaar_1.jpg"><div class="card-info">SALAAR</div></div>
+            <div class="card"><img src="assets/tnr_1.jpg"><div class="card-info">TIGER NAGESWARA RAO</div></div>
+        </div>
+    </div>
+
+    <div class="section" id="sketches">
+        <h2 class="section-title">Sketches</h2>
+        <div class="grid">
+            <div class="card"><img src="assets/sketch_1.jpg"></div>
+            <div class="card"><img src="assets/sketch_2.jpg"></div>
+        </div>
+    </div>
+
+    <div class="section" id="miniatures">
+        <h2 class="section-title">Miniatures</h2>
+        <div class="grid">
+            <div class="card"><img src="assets/mini_1.jpg"></div>
+        </div>
+    </div>
+
+    <div class="section" id="videos">
+        <h2 class="section-title">Videos</h2>
+        <div class="grid">
+            <div class="card"><video controls><source src="assets/video_1.mp4"></video></div>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <a href="https://facebook.com/TanukuSrinivasTatakuntla" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/TanukuSrinivasTatakuntla" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:svasyourdreams@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+</body>
+</html>
