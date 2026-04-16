@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkateswara Rao Tatakuntla - Portfolio</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #2c1e14 url('https://www.transparenttextures.com/patterns/dark-wood.png'); color: #fdfdf5; }
+        .header { background: #fdfdf5; color: #3d2b1f; padding: 40px 20px; text-align: center; border-bottom: 5px solid #a4c639; }
+        .header h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+        
+        /* Profile & About Icon Section */
+        .profile-section { margin-top: 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #a4c639; object-fit: cover; }
+        .about-btn { background: #3d2b1f; color: #a4c639; border: 2px solid #a4c639; padding: 10px 20px; border-radius: 20px; cursor: pointer; margin-top: 15px; font-weight: bold; }
+        #about-content { display: none; background: rgba(0,0,0,0.8); padding: 20px; margin: 20px auto; max-width: 800px; border-radius: 10px; line-height: 1.6; }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; }
+        
+        .folder { text-align: center; cursor: pointer; transition: transform 0.3s; }
+        .folder:hover { transform: scale(1.1); }
+        .folder-icon { font-size: 80px; color: #ffca28; filter: drop-shadow(2px 4px 5px rgba(0,0,0,0.5)); }
+        .folder p { margin-top: 10px; font-weight: bold; font-size: 1.1em; text-shadow: 1px 1px 2px black; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Venkateswara Rao Tatakuntla</h1>
+    <p>Production Designer | Art Director | The Art Loft</p>
+    
+    <div class="profile-section">
+        <img src="assets/profile.jpg" class="profile-img" alt="Profile"> <br>
+        <button class="about-btn" onclick="toggleAbout()">ⓘ About Me</button>
+    </div>
+
+    <div id="about-content">
+        I am a professional Production Designer and Art Director with over 28 years of extensive experience in the Indian film industry... [మీ మిగతా మేటర్ ఇక్కడ ఉంటుంది]
+    </div>
+</div>
+
+<div class="container">
+    <div class="grid">
+        <div class="folder" onclick="location.href='gallery.html'">
+            <div class="folder-icon">🖼️</div>
+            <p>Gallery</p>
+        </div>
+
+        <div class="folder" onclick="location.href='movies.html'">
+            <div class="folder-icon">🎬</div>
+            <p>Movies</p>
+        </div>
+
+        <div class="folder" onclick="location.href='posters.html'">
+            <div class="folder-icon">🎞️</div>
+            <p>Posters</p>
+        </div>
+
+        <div class="folder" onclick="location.href='miniatures.html'">
+            <div class="folder-icon">🏠</div>
+            <p>Miniatures</p>
+        </div>
+
+        <div class="folder" onclick="location.href='sketches.html'">
+            <div class="folder-icon">🎨</div>
+            <p>Sketches</p>
+        </div>
+
+        <div class="folder" onclick="location.href='crafts.html'">
+            <div class="folder-icon">⚔️</div>
+            <p>Crafts</p>
+        </div>
+
+        <div class="folder" onclick="location.href='videos.html'">
+            <div class="folder-icon">📹</div>
+            <p>Videos</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleAbout() {
+        var x = document.getElementById("about-content");
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
